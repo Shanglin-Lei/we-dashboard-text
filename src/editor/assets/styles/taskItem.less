@@ -1,0 +1,24 @@
+.ProseMirror {
+  ul[data-type='taskList'] {
+    li[data-checked] {
+      > label {
+        input {
+          width: 1.1em;
+          height: 1.1em;
+          cursor: pointer;
+          accent-color: #0aa194;
+        }
+      }
+      > div > p {
+        &::before {
+          content: '' !important;
+        }
+      }
+    }
+    li[data-checked='true'] {
+      > div > p {
+        opacity: 0.5;
+      }
+    }
+  }
+}

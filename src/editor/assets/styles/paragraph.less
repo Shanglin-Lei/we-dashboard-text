@@ -1,0 +1,33 @@
+.ProseMirror {
+  padding-top: 6px;
+  p {
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    position: relative;
+    // overflow: hidden;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
+
+    &::before {
+      pointer-events: none;
+      float: left;
+      transition: opacity 0.3s ease;
+      height: 0;
+      content: '';
+      color: #ced4da;
+      opacity: 0;
+      margin-left: 2px;
+    }
+
+    &.is-editor-empty:not(.has-focus)::before {
+      content: '双击开始输入正文';
+      opacity: 1;
+    }
+
+    &.is-empty.has-focus::before {
+      // content: '输入“+”快速插入内容';
+      content: '输入点什么...';
+      opacity: 1;
+    }
+  }
+}

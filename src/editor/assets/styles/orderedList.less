@@ -1,0 +1,24 @@
+.ProseMirror {
+  ol {
+    margin-bottom: 1em;
+    list-style: decimal !important;
+    padding-left: 1.3em;
+
+    li {
+      margin-bottom: 5px;
+      position: relative;
+      list-style: decimal !important;
+      &::marker {
+        color: #4C7DFF;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 0;
+        &::before {
+          content: '' !important;
+        }
+      }
+    }
+  }
+}
