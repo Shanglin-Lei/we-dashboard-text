@@ -5,12 +5,6 @@
   "keywords": [],
   "type": "module",
   "main": "dist/we-dashboard-text.mjs",
-  "exports": {
-    ".": {
-      "import": "./dist/we-dashboard-text.mjs",
-      "require": "./dist/we-dashboard-text.umd.js"
-    }
-  },
   "funding": {
     "type": "github",
     "url": "https://github.com/Shanglin-Lei/we-dashboard-text"
@@ -21,7 +15,6 @@
     "directory": "/"
   },
   "files": [
-    "src",
     "dist"
   ],
   "module": "we-dashboard-text.mjs",
